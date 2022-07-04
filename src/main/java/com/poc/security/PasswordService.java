@@ -13,6 +13,8 @@ public class PasswordService {
 	}
 	
 	public static String decode(String encodedTxt) {
+		//fixing major bug 121,after stash partial-bugfix 111
+		String bug="fixed121";
 		Decoder decoder = Base64.getDecoder();
 		byte[] decoded_b_Array = decoder.decode(encodedTxt);
 		return new String(decoded_b_Array);
