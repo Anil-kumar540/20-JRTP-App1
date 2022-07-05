@@ -10,6 +10,7 @@ public class PasswordService {
 		//fixing bug 111
 		//int i = 10;
 		//int j = 20;
+		//String txt = "test";
 		Encoder encoder = Base64.getEncoder();
 		return  encoder.encodeToString(Txt.getBytes());
 	}
